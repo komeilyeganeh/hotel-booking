@@ -11,6 +11,12 @@ module.exports = {
           "100%": { right: "0" },
         },
       },
+      height: {
+        "90v": "90vh"
+      },
+      maxHeight: {
+        "85v": "85vh"
+      }
     },
   },
   plugins: [],
