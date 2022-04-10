@@ -11,15 +11,17 @@ const SlideShow = () => {
   const settingSlider = {
     prevNextButtons: true,
     pageDots: false,
-    cellAlign: "left",
-    draggable: false
+    cellAlign: "center",
+    draggable: false,
+    autoPlay: 5000,
+    wrapAround: true,
+    pauseAutoPlayOnHover: false
   };
 
   return (
     <Flickity
-      className={"carousel"}
+      className={"carousel hidden sm:block"}
       options={settingSlider}
-      disableImagesLoaded={false}
     >
       <div className="relative bg-gray-400">
         <SlideOverlay />
@@ -34,14 +36,14 @@ const SlideShow = () => {
         <SlideOverlay />
         <SlideImg srcImg={img2}/>
         <div className="slider__text">
-          <h1 className="text-white font-bold text-6xl text-center">که در آن رویاها به حقیقت می پیوندند</h1>
+          <h1 className="text-white font-bold text-3xl lg:text-6xl text-center">که در آن رویاها به حقیقت می پیوندند</h1>
         </div>
       </div>
       <div className="relative bg-gray-400">
         <SlideOverlay />
         <SlideImg srcImg={img3}/>
         <div className="slider__text">
-          <h1 className="text-white font-bold text-6xl text-center">از تعطیلات خود لذت ببرید</h1>
+          <h1 className="text-white font-bold text-3xl lg:text-6xl text-center">از تعطیلات خود لذت ببرید</h1>
         </div>
       </div>
     </Flickity>

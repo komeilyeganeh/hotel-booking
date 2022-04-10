@@ -10,6 +10,10 @@
   @apply absolute top-2/4 right-2/4 -translate-y-2/4 translate-x-2/4 flex flex-col justify-center items-center gap-y-12;
 }
 
+.form__input {
+  @apply duration-200 ease-in-out outline-none border border-dashed focus:border-solid focus:border-orange-300 border-gray-300 rounded-md pt-1 pr-2 pb-1 text-sm;
+}
+
 *,
 body,
 button,
