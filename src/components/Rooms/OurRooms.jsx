@@ -2,6 +2,7 @@ import imgSingleRoom from "../../assets/rooms/single1.jpg";
 import imgDoubleRoom from "../../assets/rooms/double.jpg";
 import imgDeluxeRoom from "../../assets/rooms/deluxe.jpg";
 import OurRoomsItem from "./OurRoomsItem";
+import TitleSection from "../UI/TitleSection";
 
 const ourRooms = [
   {
@@ -28,9 +29,7 @@ const OurRooms = () => {
   return (
     <div>
       <div className="flex justify-between items-center">
-        <h1 className="text-lg md:text-2xl text-orange-400">
-          اتاق های ما
-        </h1>
+        <TitleSection>اتاق های ما</TitleSection>
         <a
           href="#"
           className="px-4 py-2 lg:px-3 lg:py-2 border-b-2 border-orange-400 text-orange-400 rounded-md duration-200 hover:bg-orange-400 hover:text-white"

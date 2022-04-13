@@ -2,7 +2,6 @@ import Flickity from "react-flickity-component";
 import img1 from "../../assets/slider1.jpg";
 import img2 from "../../assets/slider2.jpg";
 import img3 from "../../assets/slider3.jpg";
-import Button from "../UI/Button";
 import "flickity/css/flickity.css";
 import SlideOverlay from "./SlideOverlay";
 import SlideImg from "./SlideImg";

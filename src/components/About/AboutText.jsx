@@ -1,7 +1,9 @@
+import TitleSection from "../UI/TitleSection";
+
 const AboutText = () => {
   return (
     <div className="lg:w-1/2">
-      <h1 className="text-orange-400 text-lg sm:text-2xl">هتلیران، از سال 1350</h1>
+      <TitleSection>هتلیران، از سال 1350</TitleSection>
       <p className="mt-5 leading-8 text-sm sm:text-base sm:leading-8 text-gray-500 text-justify px-3">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و

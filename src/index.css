@@ -37,3 +37,19 @@ body {
 .flickity-button:hover svg {
   color: #666;
 }
+
+/* swiper button */
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  color: white;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.8rem;
+}
