@@ -596,6 +596,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -711,6 +719,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.resize-none {
+  resize: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -737,6 +749,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
+.gap-x-5 {
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+
+.gap-x-4 {
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
 }
 
 .overflow-hidden {
@@ -771,6 +801,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-orange-400 {
@@ -842,16 +877,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-5 {
@@ -912,13 +947,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -963,14 +1003,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-orange-400 {
+.text-gray-100 {
   --tw-text-opacity: 1;
-  color: rgb(251 146 60 / var(--tw-text-opacity));
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .text-red-400 {
@@ -1260,6 +1310,22 @@ body {
     display: none;
   }
 
+  .sm\:w-3\/5 {
+    width: 60%;
+  }
+
+  .sm\:w-2\/6 {
+    width: 33.333333%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1268,6 +1334,10 @@ body {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-md {
+    font-size: .9rem;
   }
 
   .sm\:leading-8 {
@@ -1305,6 +1375,18 @@ body {
     width: auto;
   }
 
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:w-2\/12 {
+    width: 16.666667%;
+  }
+
+  .md\:w-2\/6 {
+    width: 33.333333%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1340,6 +1422,16 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1353,6 +1445,10 @@ body {
 
   .lg\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
   }
 
   .lg\:flex-row {
@@ -1383,6 +1479,16 @@ body {
     padding-bottom: 0.75rem;
   }
 
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1391,5 +1497,9 @@ body {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-md {
+    font-size: .9rem;
   }
 }

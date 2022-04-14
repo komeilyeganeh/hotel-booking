@@ -5,6 +5,7 @@ import GalleryContext from "./Context/GalleryContext";
 import GalleryProvider from "./Context/GalleryProvider";
 import Main from "./components/Layout/Main/Main";
 import Home from "./components/Layout/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const galleryContext = useContext(GalleryContext);
@@ -22,6 +23,7 @@ function App() {
       <Main>
         <Home />
       </Main>
+      <Footer />
     </GalleryProvider>
   );
 }

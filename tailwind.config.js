@@ -5,6 +5,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      fontSize: {
+        md: ['.9rem']
+      },
       animation: {
         "menu-mobile": "menu-mobile",
         "fade-in": "fade-in .4s ease-in"

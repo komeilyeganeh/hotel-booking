@@ -7,6 +7,7 @@ import img1 from "../../../assets/slider1.jpg";
 
 import { Fragment } from "react";
 import Comments from "../../Comments/Comments";
+import Contact from "../../Contact/Contact";
 
 const Home = () => {
     return (
@@ -40,6 +41,11 @@ const Home = () => {
           {/* GuestComments */}
           <section className="my-7 p-8 bg-zinc-200">
             <Comments />
+          </section>
+
+          {/* ContactUs */}
+          <section className="mt-7 p-8 bg-slate-600">
+            <Contact />
           </section>
         </Fragment>
       );
