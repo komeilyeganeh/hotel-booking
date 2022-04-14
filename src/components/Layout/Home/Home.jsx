@@ -9,7 +9,7 @@ import { Fragment } from "react";
 import Comments from "../../Comments/Comments";
 import Contact from "../../Contact/Contact";
 
-const Home = () => {
+const Home = ({onShowModal}) => {
     return (
         <Fragment>
           {/* SlideShow */}

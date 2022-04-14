@@ -14,7 +14,7 @@ const Gallery = () => {
   const galleryContext = useContext(GalleryContext);
 
   const showModalHandler = (src) => {
-    galleryContext.showModal(src);
+    galleryContext.setImage(src);
   }
 
   return (

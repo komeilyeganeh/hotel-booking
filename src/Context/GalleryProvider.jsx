@@ -4,26 +4,32 @@ import GalleryContext from "./GalleryContext";
 const defaultState = {
   srcImg: "",
   isShow: false,
-  viewImage: () => {},
-  showModal: () => {},
-  hideModal: () => {},
 };
 
-const GalleryReducer = (state, action) => {
+const galleryReducer = (state, action) => {
+  if (action.type === "SET_SRC") {
+    return {
+      srcImg: action.payload,
+      isShow: true,
+    };
+  }
   if (action.type === "SHOW_MODAL") {
     state.isShow = true;
   }
   if (action.type === "HIDE_MODAL") {
-    state.isShow = false;
+    return {
+      srcImg: "",
+      isShow: false,
+    };
   }
   return defaultState;
 };
 
 const GalleryProvider = ({ children }) => {
-  const [galleryState, dispatch] = useReducer(GalleryReducer, defaultState);
+  const [galleryState, dispatch] = useReducer(galleryReducer, defaultState);
 
-  const viewImageHandler = () => {
-    dispatch({ type: "SHOW" });
+  const setImageHandler = (src) => {
+    dispatch({ type: "SET_SRC", payload: src });
   };
 
   const showModalHandler = () => {
@@ -37,7 +43,7 @@ const GalleryProvider = ({ children }) => {
   const valueContext = {
     srcImg: galleryState.srcImg,
     isShow: galleryState.isShow,
-    viewImage: viewImageHandler,
+    setImage: setImageHandler,
     showModal: showModalHandler,
     hideModal: hideModalHandler,
   };
