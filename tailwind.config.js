@@ -12,7 +12,8 @@ module.exports = {
         "breadcrumb": "url('/src/assets/breadcrumb.jpg')"
       },
       fontSize: {
-        md: ['.9rem']
+        md: ['.9rem'],
+        "15": "15px"
       },
       animation: {
         "menu-mobile": "menu-mobile",

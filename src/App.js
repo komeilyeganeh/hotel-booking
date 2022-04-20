@@ -7,6 +7,7 @@ import Home from "./components/Layout/Home/Home";
 import Footer from "./components/Footer/Footer";
 import RoomDetail from "./pages/RoomDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Rooms from "./pages/Rooms";
 
 function App() {
   const galleryContext = useContext(GalleryContext);
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/room-detail" element={<RoomDetail />} />
+            <Route path="/rooms" element={<Rooms />} />
           </Routes>
         </Main>
         <Footer />
