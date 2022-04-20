@@ -1,10 +1,10 @@
-import RoomTitlePage from "../RoomTitle/RoomTitlePage";
+import TitlePage from "../TitlePage";
 import RoomsList from "./RoomsList";
 
 const RoomsPage = () => {
   return (
     <div>
-      <RoomTitlePage>
+      <TitlePage>
         <div className="w-full flex flex-col gap-y-5">
           <h1 className="text-sm md:text-2xl text-white font-bold">
             اتاق ها
@@ -14,7 +14,7 @@ const RoomsPage = () => {
             <li className="text-orange-400 mx-2"> اتاق ها </li>
           </ol>
         </div>
-      </RoomTitlePage>
+      </TitlePage>
       <RoomsList />
     </div>
   );

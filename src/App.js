@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import RoomDetail from "./pages/RoomDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Rooms from "./pages/Rooms";
+import Booking from "./pages/Booking";
+import Contact from "./pages/Contact";
 
 function App() {
   const galleryContext = useContext(GalleryContext);
@@ -23,6 +25,8 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/room-detail" element={<RoomDetail />} />
             <Route path="/rooms" element={<Rooms />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/contact-us" element={<Contact />} />
           </Routes>
         </Main>
         <Footer />

@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavbarMobile from "./NavbarMobile";
 import NavButton from "./NavButton";
 import NavItems from "./NavItems";
@@ -21,7 +21,7 @@ const Navbar = () => {
     return <Fragment>
         <ToggleButton onToggleMenu={toggleMenuHandler} isShow={isShowMenu}/>
         <div className="brand hidden md:block">
-            <a href="#" className="inline-block py-6 font-bold text-2xl text-orange-400">هتلیران</a>
+            <Link to="/" className="inline-block py-6 font-bold text-2xl text-orange-400">هتلیران</Link>
         </div>
         <nav className="hidden md:flex">
             <NavItems />

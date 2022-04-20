@@ -1,10 +1,10 @@
 import DetailContent from "./DetailContent";
-import RoomTitlePage from "../RoomTitle/RoomTitlePage";
+import TitlePage from "../TitlePage";
 
 const Detail = () => {
   return (
     <div>
-      <RoomTitlePage>
+      <TitlePage>
         <div className="w-full flex flex-col gap-y-5">
           <h1 className="text-sm md:text-2xl text-white font-bold">
             اتاق یک نفره
@@ -20,7 +20,7 @@ const Detail = () => {
             300,000 تومان / شب
           </p>
         </div>
-      </RoomTitlePage>
+      </TitlePage>
       <DetailContent />
     </div>
   );
