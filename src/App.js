@@ -1,10 +1,12 @@
-import { Fragment, useContext, useEffect, useState } from "react";
+import { Fragment, useContext } from "react";
 import ImageViewer from "./components/Gallery/ImageViewer";
 import Header from "./components/Header/Header";
 import GalleryContext from "./Context/GalleryContext";
 import Main from "./components/Layout/Main/Main";
 import Home from "./components/Layout/Home/Home";
 import Footer from "./components/Footer/Footer";
+import RoomDetail from "./pages/RoomDetail";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const galleryContext = useContext(GalleryContext);
@@ -13,11 +15,16 @@ function App() {
   return (
     <Fragment>
       {isShow && <ImageViewer />}
-      <Header />
-      <Main>
-        <Home />
-      </Main>
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Main>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/room-detail" element={<RoomDetail />} />
+          </Routes>
+        </Main>
+        <Footer />
+      </BrowserRouter>
     </Fragment>
   );
 }

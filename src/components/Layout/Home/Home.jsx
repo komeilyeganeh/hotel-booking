@@ -3,13 +3,16 @@ import Booking from "../../Booking/Booking";
 import About from "../../About/About";
 import OurRooms from "../../Rooms/OurRooms";
 import Gallery from "../../Gallery/Gallery";
+import { useLocation } from "react-router-dom";
 import img1 from "../../../assets/slider1.jpg";
 
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Comments from "../../Comments/Comments";
 import Contact from "../../Contact/Contact";
 
 const Home = ({onShowModal}) => {
+  
+
     return (
         <Fragment>
           {/* SlideShow */}

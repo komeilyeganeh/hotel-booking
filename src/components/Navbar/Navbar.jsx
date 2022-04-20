@@ -1,12 +1,16 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import NavbarMobile from "./NavbarMobile";
 import NavButton from "./NavButton";
 import NavItems from "./NavItems";
 import ToggleButton from "./ToggleButton";
 
 const Navbar = () => {
-
     const [isShowMenu, setIsShowMenu] = useState(false);
+    const {pathname} = useLocation();
+    useEffect(() => {
+        setIsShowMenu(false);
+    }, [pathname]);
 
     const toggleMenuHandler = () => {
         setIsShowMenu(!isShowMenu);

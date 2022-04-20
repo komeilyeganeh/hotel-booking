@@ -5,6 +5,12 @@ module.exports = {
       center: true,
     },
     extend: {
+      screens: {
+        "sm-500": "500px"
+      },
+      backgroundImage: {
+        "breadcrumb": "url('/src/assets/breadcrumb.jpg')"
+      },
       fontSize: {
         md: ['.9rem']
       },
