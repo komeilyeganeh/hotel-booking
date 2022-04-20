@@ -11,6 +11,7 @@ import Rooms from "./pages/Rooms";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
 import { SpinnerInfinity } from "spinners-react";
+import About from "./pages/About";
 
 function App() {
   const galleryContext = useContext(GalleryContext);
@@ -39,6 +40,7 @@ function App() {
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/contact-us" element={<Contact />} />
+            <Route path="/about-us" element={<About />} />
           </Routes>
         </Main>
         <Footer />
